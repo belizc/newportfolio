@@ -1,0 +1,378 @@
+@import url(https://fonts.googleapis.com/css?family=Barrio);
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css?family=Spartan);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Megrim);
+@import url(https://fonts.googleapis.com/css?family=Balsamiq+Sans);
+
+body {
+    font-family: "Barrio";
+    background-color: #ffe364;
+    text-align: center;
+    padding-top: 1px;
+}
+/* The sidebar menu */
+main {
+  margin-left: 200px; /* Same as the width of the sidebar */
+}
+
+header {
+  padding: 10px;
+  text-align: center;
+  background: hotpink;
+  color: white;
+  font-size: 30px;
+  margin-top: -10px;
+  margin-left: 90px;
+  margin-right: auto;
+  width: 100%;
+  border-bottom: 5px solid black;
+}
+
+h1 {
+  font-size: 80px;
+  color: black;
+  text-align: center;
+  /* text-shadow: 4px 4px black; */
+  /* background-color: hotpink; */
+}
+h1.nombre{
+    font-size: 80px;
+    padding-left: 120px;
+    color: black;
+    letter-spacing: 20px;
+    text-align: center;
+    animation-name: abcd;
+    animation-duration: 3s;
+}
+@keyframes abcd {
+  from {font-size: 80px;}
+  to {font-size: 90px;
+  letter-spacing: 40px;}
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Nunito";
+  color: black;
+  text-align: start;
+  padding-left: 220px;
+}
+
+h2.turtleCity {
+  padding-left: 30px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: "Spartan";
+  color: black;
+  text-align: start;
+  padding-left: 200px;
+}
+
+
+nav {
+  position: fixed;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* Set the width of the sidebar */
+  top: 0; /* Stay at the top */
+  left: 0;
+  /* background-color: rgb(0, 180, 255); Black */
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .nav {padding-top: 15px;}
+  .nav a {font-size: 18px;}
+}
+
+nav ul {
+    list-style-type: none;
+    font-family: "Spartan";
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background-color:#38a5ff;
+    /* background-color: #38a5ff; */
+  }
+  
+nav li a {
+    display: block;
+    color: #000;
+    padding: 20px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+nav li a:hover {
+    background-color: #ffdb64;
+    color: black;
+  }
+
+nav .current {
+    /* background-color: #ff0000; */
+    border: 4px dotted black;
+    font-weight: 900;
+    color: black;
+  
+  } 
+
+ol {
+  font-family: "Spartan";
+  font-size: 24px;
+  margin-left: 100px;
+  text-align: start;
+}
+
+ul.resItems {
+  font-family: "Spartan";
+  font-size: 20px;
+  margin-left: 200px;
+  text-align: start;
+}
+
+p {
+    font-family: "Spartan";
+    font-size: 24px;
+    margin-left: 220px;
+    /* padding-top: 20px; */
+    text-align: start;
+}
+
+p.turtles {
+    margin-left: 30px;
+    /* padding-top: 20px; */
+    text-align: start;
+
+}
+p.skills {
+  line-height: 200%;
+}
+
+#resume{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+img {
+    /*display: block;*/
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:300px;
+    border: 5px solid black;
+    border-radius: 7px;
+    margin-top: 10px;
+    }
+
+img.turtles {
+  width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:300px;
+}
+
+img.resumeSticker {
+  width: 100%;
+  border: none;
+}
+
+/* this is for interactive resume */
+input {
+  display: none;
+}
+
+section > div {
+  display: none;
+  font-family: "spartan";
+  text-align: start;
+}
+
+#radio-education:checked ~ #education > div {
+  display: block;
+}
+
+#radio-skills:checked ~ #skills > div {
+  display: block;
+}
+
+#radio-experience:checked ~ #experience > div {
+  display: block;
+}
+/* end resume interactivity */
+
+/* START captions when hover over image code */
+.container {
+        position: relative;
+        width: 50%;
+      }
+      
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+    .overlay {
+        position: absolute;
+        border-radius: 7px;
+        top: 10px;
+        bottom: 0;
+        left: 10px;
+        right: 0;
+        height: 80%;
+        width: 80%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #ff0000;
+      }
+      
+    .container:hover .overlay {
+        opacity: .8;
+      }
+      
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+/* END captions when hover over image code */
+
+div {
+    min-height: 150px;
+    padding: 25px;
+}
+#intro {
+    text-align: left;
+}
+
+footer p {
+    text-align: right;
+    font-size: 15px;
+    padding: 0px 10px 10px 0px;
+    vertical-align: bottom;
+}
+
+.container {
+    align-items: flex-end;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Forms code to format the form */
+form {
+    font-family: "Spartan";
+  }
+
+  .grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  legend { 
+    margin-top: 900px;
+    font-size: 150%;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  label {
+    display: inline-block;
+    margin-right:10px;
+    width:50%;
+  }
+  
+  input.contactForm {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+  }
+  
+  span{
+    margin-left:20%;
+    font-family: "Spartan";
+    font-weight: bold;
+  }
+  
+  textarea{
+    width: 50%;
+    height: 35vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+  }
+  
+  
+  input[type=checkbox]{
+      display:inline;
+      width:inherit;
+  }
+  
+  input[type=submit] {
+    background-color: #38a5ff;
+    color: black;
+    font-family: "Spartan";
+    font-weight: 900;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }

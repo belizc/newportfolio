@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Form</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="art.html">art</a></li>
+      <li><a href="test_resume.html">resume</a></li>
+      <li><a href="turtles.html">turtles</a></li>
+      <li><a class="current" href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Say Hello!</h1>
+  </header>
+    <main>
+      <form class="grid-container" action="https://formspree.io/f/mvovwydr" method="POST">
+<fieldset>
+  <legend>Contact Me</legend>
+
+  <label for="name_id">Your Name</label>
+  <input class="contactForm" type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+
+  <label for="email_id">Your Email</label>
+  <input class="contactForm" type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+
+  <label for="phone_id">Your Phone Number</label>
+  <input class="contactForm" type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+  <div><span>Format: 123-456-7890</span></div>
+
+
+  <label for="msg">Say hi!</label>
+  <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+
+  <input class="contactForm" type="checkbox" checked="checked" name="remember" id = "cBox"> 
+  <label for ="cBox">Remember me</label>
+
+  <input class="contactForm" type="submit" value = "Send">
+</fieldset>
+</form>
+ <!-- <form>
+  <fieldset>
+    <legend>Contact Me</legend>
+
+    <label for="name_id">Your Name</label>
+    <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+
+    <label for="email_id">Your Email</label>
+    <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+
+    <label for="phone_id">Your Phone Number</label>
+    <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <div><span>Format: 123-456-7890</span></div>
+
+
+    <label for="msg">Say hi or leave a book recommendation!</label>
+    <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+
+    <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+    <label for ="cBox">Remember me</label>
+
+    <input type="submit" value = "Contact Me">
+  </fieldset>
+ </form> -->
+ </main>
+</body>
+</html>

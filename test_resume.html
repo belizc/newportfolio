@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="art.html">art</a></li>
+        <li><a class="current" href="test_resume.html">RESUME</a></li>
+        <li><a href="turtles.html">turtles</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1 class="nombre">Crisol Beliz</h1>
+      <p id="resume">belizcrisol@gmail.com | Ann Arbor, MI | 000-000-0000</p>
+      <!-- <img src="images/sticker.jpg" class="resumeSticker" alt="University of Michigan logo" /> -->
+    </header>
+
+    <main>
+<input type="radio" name="section" id="radio-education" checked />
+<input type="radio" name="section" id="radio-skills" />
+<input type="radio" name="section" id="radio-experience" />
+
+<section id="education">
+  <h2><label for="radio-education">Education</label></h2>
+  <div>
+    <p>University of Michigan | Master of Information Science-Data Science | 2019- present</p>
+    <p>Grand Valley State University| Allendale| Literature and Language | April 2017</p>
+  </div>
+</section>
+<section id="skills">
+  <h2><label for="radio-skills">Skills</label></h2>
+  <div>
+    <p class="skills">Python | R | SQL | HTML | CSS | Nvivo | Dedoose | Basecamp | Scikit-Learn | NLTK | Natural Language Processing | Pandas | Matplotlib | Git | Procreate | Illustrator | Omeka | Photoshop | Spanish | English | Qualitative Coding | Quantitative & Qualitative Research Methods</p>
+  </div>
+</section>
+<section id="experience">
+  <h2><label for="radio-experience">Experience</label></h2>
+  <div>
+      <h3>Research Experience for Masters Students Fellow | MICA | University of Michigan | May 2020-August 2020</h3>
+      <ul class="resItems">
+          <li>Cleaning data for over 676 studies from the Research Center for Minority Data repository by working in Jupyter notebooks and pushing code to a shared MICA repo</li>
+          <li>Extracted information from study data using NLTK, Regex, and pandas to analyze patterns in curation vocabularies</li>
+          <li>Investigated and compiled a list of potential metrics concerning citation and reuse</li>
+      </ul>
+    <h3>Qualitative Research Assistant | Rise Up 4 CS | University of Michigan | Oct. 2017-Present</h3>
+    <ul class="resItems">
+        <li>Gathering of qualitative and quantitative data for mentorship program providing undergraduate students with preparation for the Computer Science AP exam</li>
+        <li>Analyzing data from interviews, focus groups, and observations from over 9 Academic Institutions</li>
+        <li>Coding interviews using qualitative research software including Nvivo and Dedoose</li>
+    </ul>
+    <h3>Qualitative Research and Curriculum Assistant | Compugirls | University of Michigan | Oct. 2017-Present</h3>
+    <ul class="resItems">
+        <li>Conducting interviews with participants of the programs for all 3 sites and encoding interviews for further qualitative analysis</li>
+        <li>Creating introductory STEM lesson plans for adolescents fostering computational career aspirations</li>
+        <li>Curriculum development and pedagogical design for computational thinking</li>
+    </ul>
+
+    
+  </div>
+</section>
+</main>
+<footer>
+    <p>University of Michigan School of Information <br/>
+      &copy; Crisol Beliz - SI 539 Fall 2020</p>
+  </footer>
+</body>
+</html>
